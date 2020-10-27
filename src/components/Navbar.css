@@ -1,3 +1,14 @@
-.navbar > h1 {
-    color : grey;
+.navbar {
+    background-color: black;
+}
+
+.navbar > ul {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_item {
+    color : white;
 }

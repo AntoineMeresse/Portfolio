@@ -12,8 +12,9 @@
     align-items: center;
 }
 
-.navbar_item {
+.navbar_item > a{
     color : white;
+    text-decoration: none;
 }
 
 .navbar_item:hover {

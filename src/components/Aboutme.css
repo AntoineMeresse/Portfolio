@@ -33,7 +33,7 @@ hr {
 
 .skills_cards {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -48,6 +48,12 @@ hr {
         color : rgb(60, 112, 160);
         font-size: 50px;
         margin-bottom: 20px;
+    }
+
+    .skills_cards {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

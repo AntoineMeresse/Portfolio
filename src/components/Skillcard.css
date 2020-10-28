@@ -1,12 +1,10 @@
 .skillcard {
     border : black 2px solid;
     border-radius: 30px;
-    width : 100%;
-    height: 250;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-bottom: 30px;
 }
 
 .skillcard > h1 {

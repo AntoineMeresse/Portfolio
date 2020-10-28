@@ -6,6 +6,7 @@ import {
 
 import Navbar from './components/Navbar';
 import Maindiv from './components/Maindiv';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="app"> 
         <Navbar/>
         <Maindiv/>
+        <Footer/>
       </div>
     </Router>
   );

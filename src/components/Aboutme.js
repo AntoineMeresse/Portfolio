@@ -2,6 +2,7 @@ import React from 'react';
 import './Aboutme.css';
 
 import Typing from 'react-typing-animation';
+import Educationtimeline from "./Educationtimeline";
 
 function Aboutme() {
 	return (
@@ -18,14 +19,15 @@ function Aboutme() {
 			<hr/>
 			<div className="skills">
 				<Typing speed={300}>
-					<h1 className="title"> >>> Skills :</h1>
+					<h1 className="title"> Skills :</h1>
 				</Typing>
 			</div>
 			<hr/>
 			<div className="education">
 				<Typing speed={300}>
-					<h1 className="title"> >>> Education :</h1>
+					<h1 className="title"> Education :</h1>
 				</Typing>
+				<Educationtimeline/>
 			</div>
 		</div>
 	);

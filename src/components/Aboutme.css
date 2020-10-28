@@ -1,3 +1,33 @@
-.aboutme {
-
+.aboutme, .aboutme div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.aboutme {
+    margin: 20px 0;
+}
+
+.aboutme div {
+    width: 100%;
+}
+
+.aboutme_topmessage h1 {
+    color : grey;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1.title {
+    color : rgb(60, 112, 160);
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 90%;
+    margin: 30px 0px;
+}
+
+

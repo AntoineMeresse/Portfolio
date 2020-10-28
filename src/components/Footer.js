@@ -9,9 +9,9 @@ function Footer() {
 	return (
 		<div className="footer">
 			<div className="footer_icons">
-				<EmailIcon/>
-				<LinkedInIcon/>
-				<GitHubIcon/>
+				<EmailIcon onClick={event => window.location.href="mailto:ant.meresse@gmail.com"}/>
+				<LinkedInIcon onClick={event => window.open("https://www.linkedin.com/in/antoine-meresse","_blank")}/>
+				<GitHubIcon onClick={event => window.open("https://github.com/AntoineMeresse","_blank")}/>
 			</div>
 		</div>
 	);

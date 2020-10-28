@@ -3,6 +3,7 @@ import './Aboutme.css';
 
 import Typing from 'react-typing-animation';
 import Educationtimeline from "./Educationtimeline";
+import SkillCard from "./Skillcard";
 
 function Aboutme() {
 	return (
@@ -21,6 +22,12 @@ function Aboutme() {
 				<Typing speed={300}>
 					<h1 className="title"> Skills :</h1>
 				</Typing>
+				<div className="skills_cards">
+					<SkillCard title="Programming Languages" skills={['Python','Javascript','Java']}/>
+					<SkillCard title="Front-end" skills={['HTML/CSS','React']}/>
+					<SkillCard title="Back-end" skills={['Node.js','Express','Spring boot']}/>
+					<SkillCard title="Tools" skills={['Github','Visual Studio Code','Figma']}/>
+				</div>
 			</div>
 			<hr/>
 			<div className="education">

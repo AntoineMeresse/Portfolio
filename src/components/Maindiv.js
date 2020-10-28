@@ -2,6 +2,7 @@ import React from 'react';
 import './Maindiv.css';
 
 import {Switch, Route} from "react-router-dom";
+import Aboutme from "./Aboutme";
 
 function Maindiv() {
 	return (
@@ -16,7 +17,7 @@ function Maindiv() {
               </Route>
               
               <Route path="/">
-                <p>About me</p>
+                <Aboutme/>
               </Route>
             </Switch>
 		</div>

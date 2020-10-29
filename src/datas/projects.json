@@ -3,12 +3,12 @@
         "name" : "Terminal chart",
         "url" :  "https://github.com/AntoineMeresse/Terminal-chart",
         "technos" : ["Python", "Matplotlib"],
-        "img" : ""
+        "img" : "chart.png"
     },
     {
         "name" : "Portfolio",
         "url" :  "https://github.com/AntoineMeresse/Portfolio",
         "technos" : ["Javascript", "React"],
-        "img" : ""
+        "img" : "portfolio.png"
     }
 ]

@@ -14,7 +14,7 @@ function Maindiv() {
               </Route>
               
               <Route path="/contact">
-                <p>Contact me</p>
+                <h1>Not implemented yet</h1>
               </Route>
               
               <Route path="/">

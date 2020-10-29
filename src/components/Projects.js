@@ -7,7 +7,6 @@ import ProjectItem from "./Projectitem";
 function Projects() {
 	return (
 		<div className="projects">
-			<h1>Still building</h1>
 			<div className="projects_list">
 				{
 					projectlst.map(

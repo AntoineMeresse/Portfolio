@@ -1,11 +1,15 @@
 import React from 'react';
 import './Projectitem.css';
 
-function Projectitem({title, url, technos}) {
+import GitHubIcon from '@material-ui/icons/GitHub';
+
+function Projectitem({title, url, technos, image}) {
 	return (
 		<div className="projectitem">
 			<h1>{title}</h1>
-			<h2>Technos : </h2>
+			{image && (
+				<img src={`/screenshots/${image}`} alt="projectImage"/>
+			)}
 			<ul>
 				{
 					technos.map(
@@ -13,7 +17,7 @@ function Projectitem({title, url, technos}) {
 					)
 				}
 			</ul>
-			<p>Url : <a href={url}>Link</a></p>
+			<GitHubIcon onClick={event => window.open(`${url}`,"_blank")}/>
 		</div>
 	);
 }

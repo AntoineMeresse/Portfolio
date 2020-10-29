@@ -11,13 +11,13 @@ function Projectitem({title, url, technos, image}) {
 				<img src={`/screenshots/${image}`} alt="projectImage"/>
 			)}
 			<ul>
-				{
+				{ technos && 
 					technos.map(
 						(elem) => (<li>{elem}</li>)
 					)
 				}
 			</ul>
-			<GitHubIcon onClick={event => window.open(`${url}`,"_blank")}/>
+			{ url && <GitHubIcon onClick={event => window.open(`${url}`,"_blank")}/>}
 		</div>
 	);
 }

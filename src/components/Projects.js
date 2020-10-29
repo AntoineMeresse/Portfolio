@@ -15,6 +15,7 @@ function Projects() {
 						)	
 					)
 				}
+				<ProjectItem title="Maybe new projects soon &#128512;"/>
 			</div>
 		</div>
 	);

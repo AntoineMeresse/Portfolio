@@ -53,6 +53,8 @@
   }
 }
 
+/*
+
 @media (min-width: 800px) {
   .projectitem img:hover {
     position: fixed;
@@ -63,5 +65,14 @@
     height: 50%;
     border-radius: 40px;
     border: 5px black solid;
+  }
+}
+
+*/
+
+@media (min-width: 800px) {
+  .projectitem img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
   }
 }

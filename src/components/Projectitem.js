@@ -9,7 +9,7 @@ function Projectitem({title, url, technos, image, site}) {
 		<div className="projectitem">
 			<h1>{title}</h1>
 			{image && (
-				<img src={`/screenshots/${image}`} alt="projectImage"/>
+				<img src={`/screenshots/${image}`} alt="projectImage" onClick={event => window.open(`/screenshots/${image}`,"_blank")}/>
 			)}
 			<ul>
 				{ technos && 

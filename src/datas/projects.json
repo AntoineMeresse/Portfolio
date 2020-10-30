@@ -8,7 +8,7 @@
     {
         "name" : "Portfolio",
         "url" :  "https://github.com/AntoineMeresse/Portfolio",
-        "technos" : ["Javascript", "React"],
+        "technos" : ["HTML/CSS", "Javascript", "React"],
         "img" : "portfolio.png"
     },
     {
@@ -16,5 +16,13 @@
         "url" :  "https://github.com/AntoineMeresse/UrtDemoRecorder",
         "technos" : ["Python", "Pyqt5"],
         "img" : "urtdemorecorder.png"
+    },
+    {
+        "name" : "Sudoku Solver",
+        "url" :  "https://github.com/AntoineMeresse/AntoineMeresse.github.io",
+        "site" : "https://antoinemeresse.github.io/",
+        "technos" : ["HTML/CSS","Javascript"],
+        "img" : "sudoku_solver.png"
     }
+
 ]

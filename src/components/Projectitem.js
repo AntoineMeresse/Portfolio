@@ -2,8 +2,9 @@ import React from 'react';
 import './Projectitem.css';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkIcon from '@material-ui/icons/Link';
 
-function Projectitem({title, url, technos, image}) {
+function Projectitem({title, url, technos, image, site}) {
 	return (
 		<div className="projectitem">
 			<h1>{title}</h1>
@@ -17,7 +18,10 @@ function Projectitem({title, url, technos, image}) {
 					)
 				}
 			</ul>
-			{ url && <GitHubIcon onClick={event => window.open(`${url}`,"_blank")}/>}
+			<div className="projectitem_icons">
+				{ url && <GitHubIcon onClick={event => window.open(`${url}`,"_blank")}/>}
+				{ site && <LinkIcon onClick={event => window.open(`${site}`,"_blank")}/>}
+			</div>
 		</div>
 	);
 }

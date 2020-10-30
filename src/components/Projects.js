@@ -11,7 +11,7 @@ function Projects() {
 				{
 					projectlst.map(
 						(elem, index) => (	
-							<ProjectItem title={elem.name} technos={elem.technos} url={elem.url} image={elem.img} key={index}/>
+							<ProjectItem title={elem.name} technos={elem.technos} url={elem.url} image={elem.img} key={index} site={elem.site}/>
 						)	
 					)
 				}

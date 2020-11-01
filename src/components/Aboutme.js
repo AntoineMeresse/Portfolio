@@ -27,6 +27,7 @@ function Aboutme() {
 					<SkillCard title="Front-end" skills={['HTML/CSS','React']}/>
 					<SkillCard title="Back-end" skills={['Node.js','Express','Spring boot']}/>
 					<SkillCard title="Tools" skills={['Github','Visual Studio Code','Figma']}/>
+					<SkillCard title="&#129488; Interested in" skills={['Flutter','Vue.js','Typescript']}/>
 				</div>
 			</div>
 			<hr/>

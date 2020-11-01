@@ -13,9 +13,11 @@ function Navbar() {
                     <li className="navbar_item">
                         <Link to="/projects">My Projects</Link>
                     </li>
+                    {/* Not implemented yet 
                     <li className="navbar_item">
                         <Link to="/contact">Contact me</Link>
                     </li>
+                    */}
                 </ul>
         </nav>
     )

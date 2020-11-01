@@ -1,34 +1,51 @@
 .skillcard {
-    border : black 2px solid;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
+  border: black 2px solid;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .skillcard > h1 {
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
-    color : rgb(60, 112, 160);
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(60, 112, 160);
 }
 
 .skillcard ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skillcard ul li {
-    list-style-type: disc;
-    font-size: 25px;
+  list-style-type: disc;
+  font-size: 25px;
 }
 
 .skillcard:nth-child(2n) {
-    background-color:  rgba(43, 100, 206, 0.089);
+  background-color: rgba(43, 100, 206, 0.089);
 }
 
-.skillcard:nth-child(2n+1) {
-    background-color: rgba(43, 100, 206, 0.26);
+.skillcard:nth-child(2n + 1) {
+  background-color: rgba(43, 100, 206, 0.26);
+}
+
+@media (max-width: 800px) {
+  .skillcard {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .skillcard:nth-child(4n),
+  .skillcard:first-child {
+    margin-left: 10px;
+  }
+
+  .skillcard:nth-child(3n) {
+    margin-right: 10px;
+  }
 }

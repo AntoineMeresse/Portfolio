@@ -20,7 +20,7 @@ function Aboutme() {
 			<hr/>
 			<div className="skills">
 				<Typing speed={300}>
-					<h1 className="title"> Skills :</h1>
+					<h1 className="title"> Programming :</h1>
 				</Typing>
 				<div className="skills_cards">
 					<SkillCard title="Programming Languages" skills={['Python','Javascript','Java']}/>

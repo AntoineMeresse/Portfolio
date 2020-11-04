@@ -4,6 +4,7 @@ import './Aboutme.css';
 import Typing from 'react-typing-animation';
 import Educationtimeline from "./Educationtimeline";
 import SkillCard from "./Skillcard";
+import skillInfos from "../datas/skillcards.json";
 
 function Aboutme() {
 	return (
@@ -23,11 +24,13 @@ function Aboutme() {
 					<h1 className="title"> Programming :</h1>
 				</Typing>
 				<div className="skills_cards">
-					<SkillCard title="Main Languages" skills={['Python','Javascript','Java']}/>
-					<SkillCard title="Front-end" skills={['HTML/CSS','React']}/>
-					<SkillCard title="Back-end" skills={['Node.js','Express','Spring']}/>
-					<SkillCard title="Tools" skills={['Github','Visual Studio Code','Figma']}/>
-					<SkillCard title="&#129488; Interested in" skills={['Flutter','Vue.js','Typescript','Android']}/>
+					{
+						skillInfos.map(
+							(elem, index) => (
+								<SkillCard title={elem.name} skills={elem.liste} key={index}/>
+							)
+						)
+					}
 				</div>
 			</div>
 			<hr/>

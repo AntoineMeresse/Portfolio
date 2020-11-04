@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Main Languages",
+        "liste" : ["Python","Javascript","Java"]
+    },
+    {
+        "name" : "Front-end",
+        "liste" : ["HTML/CSS","React"]
+    },
+    {
+        "name" : "Back-end",
+        "liste" : ["Node.js","Express","Spring"]
+    },
+    {
+        "name" : "Tools",
+        "liste" : ["Github","Visual Studio Code","Figma"]
+    },
+    {
+        "name" : "🧐 Interested in",
+        "liste" : ["Flutter","Vue.js","Typescript","Android"]
+    }
+]

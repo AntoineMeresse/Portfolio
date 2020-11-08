@@ -1,17 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Aboutme.css';
 
 import Typing from 'react-typing-animation';
 import Educationtimeline from "./Educationtimeline";
 import SkillCard from "./Skillcard";
-import skillInfos from "../datas/skillcards.json";
+
+import axios from '../axios';
 
 function Aboutme() {
+
+	const [skillInfos, setSkillInfos] = useState([]);
+
+	useEffect(() => {
+		async function fetchData() {
+			const req = await axios.get('/skillcards');
+			console.log(req);
+			setSkillInfos(req.data);
+		}
+		fetchData();
+	}, [])
+
 	return (
 		<div className="aboutme">
 			<div className="aboutme_topmessage">
 				<Typing speed={300}>
-					<h1 className="title">&#128075; Hey !  &#128075;</h1>
+					<h1 className="title">&nbsp; &#128075; Hey !  &#128075;&nbsp;&nbsp;</h1>
 				</Typing>
 				<Typing speed={50} loop={true}>
 					<h1>I'm Antoine Méresse, nice to see you here !</h1>

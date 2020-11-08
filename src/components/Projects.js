@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Projects.css';
 
-import projectlst from "./../datas/projects.json";
 import ProjectItem from "./Projectitem";
+import axios from "../axios";
 
 function Projects() {
+
+	const [projectlst, setProjectlst] = useState([]);
+
+	useEffect(() => {
+		async function fetchData() {
+			const req = await axios.get('/projects');
+			console.log(req);
+			setProjectlst(req.data);
+		}
+		fetchData();
+	}, [])
+
 	return (
 		<div className="projects">
 			<div className="projects_list">
